@@ -18,10 +18,17 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:ems="10"
-        android:hint="Nhập dữ liệu bất kỳ" >
+        android:hint="Họ Tên" >
 
         <requestFocus />
     </EditText>
+
+    <EditText
+        android:id="@+id/edtNhap2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Địa chỉ" />
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -31,8 +38,9 @@
 
         <Button
             android:id="@+id/btnGui"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_width="150dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
             android:text="Gửi" />
 
     </LinearLayout>

@@ -11,7 +11,7 @@ import manhinhdieukhien.com.R;
 
 public class lab7 extends Activity implements OnClickListener{
 	Button btnGui;
-	EditText edtNhap;
+	EditText edtNhap,edtNhap2;
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		// TODO Auto-generated method stub
@@ -20,15 +20,19 @@ public class lab7 extends Activity implements OnClickListener{
 		
 		btnGui = (Button) findViewById(R.id.btnGui);
 		edtNhap = (EditText) findViewById(R.id.edtNhap);
+		edtNhap2 = (EditText) findViewById(R.id.edtNhap2);
 		btnGui.setOnClickListener(this);
 		
 	}
 	@Override
 	public void onClick(View v) {
 		if(v==btnGui){
-			String kq = edtNhap.getText().toString();
+			String kq, kq2;
+			kq = edtNhap.getText().toString();
+			kq2 = edtNhap2.getText().toString();
 			Intent intent = new Intent(getApplicationContext(),ketqua.class);
 			intent.putExtra("requestCode", kq);
+			intent.putExtra("requestCode2", kq2);
 			startActivity(intent);
 		}
 		
