@@ -5,7 +5,7 @@
     android:versionName="1.0" >
 
     <uses-sdk
-        android:minSdkVersion="14"
+        android:minSdkVersion="16"
         android:targetSdkVersion="23" />
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
   	<uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
@@ -45,6 +45,7 @@
         <activity android:name="lab3.com.quenmatkhau"></activity>
         <activity android:name="quantri.com.quantri"></activity>
         <activity android:name="lab7.com.ketqua"></activity>
+        <activity android:name="lab8.com.notify"></activity>
     </application>
 
 </manifest>
